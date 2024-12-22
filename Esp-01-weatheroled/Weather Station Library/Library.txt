@@ -1,5 +1,0 @@
-Adafruit_GFX
-Adafruit_SSD1306
-NTPClient
-TimeLib
-ArduinoJson

@@ -47,7 +47,7 @@ String Incoming = "";
 String Message = "";             
 
 //---------------------------------------- LoRa data transmission configuration
-byte LocalAddress = 0x02;       //--> address of this device (Slave 1)
+byte LocalAddress = 0x02;       //--> address of this device (Slave 1)   Node2
 //byte LocalAddress = 0x03;     //--> address of this device (Slave 2)
 
 byte Destination_Master = 0x10; //--> destination to send to Master (ESP32)
@@ -115,7 +115,7 @@ void onReceive(int packetSize) {
 
 //---------------------------------------- Function to process incoming data and send data to Master.
 void Processing_incoming_data() {
-  if (Incoming == "SDS1" || Incoming == "SDS2") {  // SDS1 or SDS2 sent from Master
+  if (Incoming == "SDS2") {  // SDS1 or SDS2 sent from Master
     // digitalWrite(LED_1_Pin, !digitalRead(LED_1_Pin));
     // digitalWrite(LED_2_Pin, !digitalRead(LED_2_Pin));
    
